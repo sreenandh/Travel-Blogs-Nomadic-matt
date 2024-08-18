@@ -1,0 +1,509 @@
+* {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+.navbar {
+    padding: 20px 0; 
+    background-color: #000;
+}
+
+.navbar .form-control.search-input {
+    width: 180px;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar .form-control.search-input:focus {
+    width: 220px;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 0 15px; 
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: cyan;
+}
+
+/* Hover Drop Down style */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+
+#startHereDropdown .dropdown-item
+
+{
+    border-bottom: 1px solid white;
+    padding: 10px 20px;
+}
+
+#bookingResourcesDropdown .dropdown-item{
+
+    border-bottom: 1px solid white;
+    padding: 10px 20px;
+}
+
+
+#startHereDropdown .dropdown-item:last-child
+
+{
+    border-bottom: none; 
+}
+
+#bookingResourcesDropdown .dropdown-item:last-child {
+
+    border-bottom: none; 
+
+}
+
+#startHereDropdown .dropdown-item:hover
+
+{
+    background-color: cyan;
+    color: white;
+}
+
+#bookingResourcesDropdown .dropdown-item:hover{
+
+    background-color: cyan;
+    color: white;
+    
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border: 1px solid white;
+}
+
+.dropdown-item {
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: cyan;
+    color: white;
+}
+
+.nav-item.dropdown:hover > .nav-link {
+    color: cyan;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: cyan;
+}
+
+.navbar .fa {
+    color: white;
+    font-size: 1.2rem; 
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .fa:hover {
+    color: cyan;
+}
+
+.btn-outline-light {
+    color: white;
+    border-color: white;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    color: cyan;
+    border-color: blue;
+}
+
+
+.welcome{
+    background-image: url('welcome.jpg');
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(80%);
+}
+
+.welcomeh1{
+    text-align: center;
+    padding: 100px;
+    margin-left: 500px;
+    color: rgb(65, 62, 62);
+    position: absolute;
+    margin-top: -500px;
+    color: white;
+    margin-left: 600px;
+
+    
+}
+
+.welcomeh1 a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.welcomeh1 a:hover{
+    
+
+    color:cyan;
+    filter: brightness(60%);
+
+}
+
+.blue {
+    background-color: #1E67A6; 
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips-container {
+    display: flex;
+    align-items: center;
+}
+
+.tips-container h3 {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif; 
+}
+
+.input-field {
+    height: 60px;
+    width: 220px; 
+    margin-right: 10px; 
+    padding-left: 10px;
+    font-size:16px;
+    color: black;
+    border: none; 
+    box-shadow: none; 
+    border-radius: 5px;
+}
+
+.btn-tips {
+    height: 60px; 
+    padding: 0 30px;
+    font-weight: bold;
+    background-color: #9FCC66;
+    color: white;
+    border: none;
+    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-tips:hover {
+    background-color: #88B55A;
+    color: white;
+}
+
+
+
+  
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    filter: brightness(50%); 
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+
+/* About section */
+
+.about{
+    background:rgb(221, 221, 221);
+    padding-top: 50px;
+    padding-left: 185px;
+    padding-right: 185px;
+}
+.about p{
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#Learnmore{
+    color:cyan;
+    filter: brightness(60%);
+}
+
+#Learnmore:hover{
+    color: black;
+}
+
+.about2{
+
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -760px;
+}
+
+.about2 ul li a{
+
+    text-decoration: none;
+    color: cyan;
+    filter: brightness(60%);
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+}
+
+.about2 ul li a:hover{
+
+    color: black;
+
+}
+
+.about2 h4{
+
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+.about2 img{
+    width: 400px;
+}
+
+.Top{
+
+    padding-top: 50px;
+    padding-left: 185px;
+    padding-right: 185px;
+}
+
+.Top2{
+
+    position: absolute;
+    margin-left: 380px;
+    margin-top: -300px;
+}
+
+.Top p{
+    font-size: 22px;
+    font-weight: 100;
+    font-family:'Times New Roman', Times, serif;
+}
+  
+
+.Top button {
+    height: 60px; 
+    padding: 0 30px;
+    font-weight: bold;
+    background-color: cyan;
+    
+    color: white;
+    border: none;
+    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: large;
+    border-radius: 10px;
+    
+}
+
+.Top button:hover {
+    background-color: rgb(53, 186, 186);
+    color: white;
+}
+
+/* Image after Top Resources */
+
+.globe{
+position: absolute;
+margin-left: 200px;
+width: 50%;
+}
+
+
+/* Books & Guides */
+
+.Books{
+    padding-top: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.Books p{
+
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Books2{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -400px;
+}
+
+.Books2 img{
+    width:40%;
+}
+
+.globe1{
+    position:absolute;
+    margin-left: 390px;
+    width: 50%;
+}
+
+.Guides{
+    padding-top: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.Guides p{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.gallery2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.gallery2-item {
+    position: relative;
+    width: 100%;
+    max-width: 150px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery2-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.free{
+    background:rgb(221, 221, 221);
+    padding-top: 50px;
+    padding-left: 230px;
+    padding-right: 250px;
+    background-size: contain;
+    height: 500px
+}
+
+.free p{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.free2{
+    width: 50%;
+    height: 50px;
+    align-items: center;
+}
+.letter{
+    height: 50px;
+    width: 600px;  
+    padding-left: 10px;
+    margin: 10px;
+    font-size:16px;
+    color: black;
+    border: black; 
+    box-shadow: none; 
+    border-radius: 5px;
+}
+
+.btn-tips2{
+    height: 60px; 
+    width: 600px;
+    padding: 0 30px;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #9FCC66;
+    color: white;
+    border: none;
+    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-tips2:hover {
+    background-color: #88B55A;
+    color: white;
+}
+
+.free2 img{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -400px;
+    width: 36%;
+}
+
+footer p a{
+
+    text-decoration: none;
+}

@@ -277,13 +277,13 @@
 
 /* About section */
 
-.about{
+#about{
     background:rgb(221, 221, 221);
     padding-top: 50px;
     padding-left: 185px;
     padding-right: 185px;
 }
-.about p{
+#about p{
     font-size: 22px;
     font-family:'Times New Roman', Times, serif;
 }
@@ -383,13 +383,13 @@ width: 50%;
 
 /* Books & Guides */
 
-.Books{
+#Books{
     padding-top: 50px;
     padding-left: 250px;
     padding-right: 250px;
 }
 
-.Books p{
+#Books p{
 
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
